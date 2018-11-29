@@ -10,8 +10,10 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+//import { HttpModule } from '@angular/http';
 import { FeedsPageModule } from '../pages/feeds/feeds.module';
 import { IntroPageModule } from '../pages/intro/intro.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { IntroPageModule } from '../pages/intro/intro.module';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     FeedsPageModule,
-    IntroPageModule
+    IntroPageModule,
+    HttpClientModule
   ],
 
   bootstrap: [IonicApp],
